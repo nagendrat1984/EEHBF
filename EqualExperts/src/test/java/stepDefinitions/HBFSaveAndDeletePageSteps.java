@@ -8,13 +8,13 @@ import cucumber.api.java.en.When;
 import pageObjects.HBFSavePage;
 import pageObjects.HBFDeletePage;
 
-public class HBFSavePageSteps {
+public class HBFSaveAndDeletePageSteps {
 	
 	TestContext testContext;
 	HBFSavePage hbfSavePage;
 	HBFDeletePage hbfDeletePage;
 	 
-	 public HBFSavePageSteps(TestContext context) {
+	 public HBFSaveAndDeletePageSteps(TestContext context) {
 		 testContext = context;
 		 hbfSavePage = testContext.getPageObjectManager().getHBFSavePage();
 		 hbfDeletePage= testContext.getPageObjectManager().getHBFDeletePage();
@@ -50,12 +50,9 @@ public class HBFSavePageSteps {
 			hbfDeletePage.deleteHotelBooking(FirstName);
 		}
 
-		@Then("^EE: I should be able to verify that the booking is deleted successfully$")
-		public void ee_I_should_be_able_to_verify_that_the_booking_is_deleted_successfully() throws Throwable {
-		    // Write code here that turns the phrase above into concrete actions
-			System.out.println("Write code to assert here. Since this is a demo project not writing code here to assert");
+		@Then("^EE: I should be able to verify that the booking is deleted successfully using \"([^\"]*)\"$")
+		public void ee_I_should_be_able_to_verify_that_the_booking_is_deleted_successfully_using(String FirstName) throws Throwable {
+			hbfDeletePage.verifyDeletedHotelBooking(FirstName);
 		}
-		
-		
 
 }

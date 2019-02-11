@@ -8,7 +8,7 @@ Scenario Outline: Customer navigates to Equal Experts demot hotel booking form w
 	When EE: I enter all the mandatory fields viz "<FirstName>","<LastName>","<Price>","<DepositPaid>","<CheckIn>","<CheckOut>" in the page
 	And EE: I click on Save
 	And EE: I delete the record created above using "<FirstName>"
-	Then EE: I should be able to verify that the booking is deleted successfully	
+	Then EE: I should be able to verify that the booking is deleted successfully using "<FirstName>"
 
 Examples:
 			|FirstName	 |LastName      |Price|DepositPaid|CheckIn   |CheckOut  |
