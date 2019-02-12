@@ -4,9 +4,9 @@ import cucumber.TestContext;
 import cucumber.api.java.en.Given;
 import pageObjects.HomePage;
 
-/*Generally in all projects we will have login and we will write login as a separate step definition. 
-Navigating would generally happen in @Before annotation.
-Since There is no login I am using navigating to home page as a separate step definition.*/
+/*Generally in all projects we will have login and we will write login as a separate step definition file. 
+Navigating to a web page would generally happen in @Before annotation.
+Since There is no login in this application form I am using navigating to home page as a separate step definition.*/
 
 public class HomePageSteps {
 	

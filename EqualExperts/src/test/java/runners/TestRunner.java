@@ -9,7 +9,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import managers.FileReaderManager;
 
 
-//@RunWith(Cucumber.class) //--Junit
 @CucumberOptions(
 		features = "src/test/resources/functionalTests",
 		glue= {"stepDefinitions"},

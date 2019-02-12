@@ -15,9 +15,9 @@ public class Hooks {
 	@Before
 	public void BeforeSteps() {
 		
-		/*Generally in any client project you open the url and have to enter login credentials. 
-		Since in Equal experts hotel booking form page there is no login I wrote opening the url in step definition file instead of this method. 
-		Ideally you start cucumber file by logging in to an application.*/
+		/*Generally in any client project we have to browse the url and enter login credentials. 
+		Since in Equal experts hotel booking form page there is no login, I wrote opening the url in step definition file instead of this method. 
+		In Ideal world you start cucumber file by logging in to an application.*/
 			
 	}
 

@@ -79,10 +79,6 @@ public class HBFSavePage {
 
 	}
 
-	/*	public String getFirstName(String firstname) {
-		 return firstname;
-	}
-	 */
 
 	public void fill_PersonalDetails(String FirstName, String LastName, String Price, String DepositPaid, String CheckIn, String CheckOut) {
 		enter_FirstName(FirstName);
@@ -91,24 +87,9 @@ public class HBFSavePage {
 		select_InDepositPaid(DepositPaid);
 		enter_DateInCheckIn(CheckIn);
 		enter_DateInCheckOut(CheckOut);
-
-		/*		for (Map<String, String> data: mandatoryfields.asMaps(String.class, String.class)) {
-			enter_FirstName(fields.getFirstName());
-			enter_LastName(fields.getLastName());
-			enter_TextInPrice(fields.getPrice());
-			select_InDepositPaid(fields.getDepositPaid());
-			enter_DateInCheckIn(fields.getCheckIn());
-			enter_DateInCheckOut(fields.getCheckOut());
-
-		enter_FirstName(data.get("FirstName"));
-		enter_LastName(data.get("LastName"));
-		enter_TextInPrice(data.get("Price"));
-		select_InDepositPaid(data.get("DepositPaid"));
-		enter_DateInCheckIn(data.get("CheckIn"));
-		enter_DateInCheckOut(data.get("CheckOut"));
-
-		}*/
-
 	}
+	
+	
+	
 
 }
