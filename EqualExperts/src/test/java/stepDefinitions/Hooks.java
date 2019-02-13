@@ -23,7 +23,7 @@ public class Hooks {
 
 	@After
 	public void AfterSteps() {
-		//testContext.getWebDriverManager().closeDriver();
+		testContext.getWebDriverManager().closeDriver();
 	}
 
 }
