@@ -30,7 +30,7 @@ public class HBFSaveAndDeletePageSteps {
 
 		@And("^EE: I click on Save$")
 		public void ee_I_click_on_Save() throws Throwable {
-			hbfSavePage.clickOn_Save(); 
+			 hbfSavePage.clickOn_Save(); 
 		}
 		
 		@Then("^EE: I should be able to verify that the booking is saved successfully using \"([^\"]*)\"$")
