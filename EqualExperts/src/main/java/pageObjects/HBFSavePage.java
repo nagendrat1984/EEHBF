@@ -50,8 +50,9 @@ public class HBFSavePage {
 		txtbx_LastName.sendKeys(lastName);
 	}
 
-	public void clickOn_Save() {
+	public void clickOn_Save() throws InterruptedException {
 		btn_Save.click();
+		Thread.sleep(5000);
 	}
 
 	public void enter_TextInPrice(String totalprice) {

@@ -30,10 +30,13 @@ public class HBFSaveAndDeletePageSteps {
 
 		@And("^EE: I click on Save$")
 		public void ee_I_click_on_Save() throws Throwable {
-			Thread.sleep(3000);
 			hbfSavePage.clickOn_Save(); 
 		}
-
+		
+		@Then("^EE: I should be able to verify that the booking is saved successfully using \"([^\"]*)\"$")
+		public void ee_I_should_be_able_to_verify_that_the_booking_is_saved_successfully_using(String FirstName) throws Throwable {
+			hbfDeletePage.verifySaveHotelBooking(FirstName);
+		}
 		
 		@When("^EE: I delete the record created above using \"([^\"]*)\"$")
 		public void ee_I_delete_the_record_created_above_using(String FirstName) throws Throwable {
