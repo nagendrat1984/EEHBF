@@ -97,9 +97,7 @@ public class HBFDeletePage {
 		System.out.println("row size is " + rowsize);
 		
 		for (int row = 4; row < rowsize; row++) {
-			//row=row+3;
 			String attribute = getIDOfParticularRow(row);
-			//row=row-3;
 			//this will get the id of the row in question
 			String input = attribute, extractedID;
 			extractedID = input.substring(input.indexOf('(')+1,input.lastIndexOf(')'));

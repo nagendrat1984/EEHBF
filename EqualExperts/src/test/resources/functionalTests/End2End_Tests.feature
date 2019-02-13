@@ -14,4 +14,5 @@ Scenario Outline: Customer navigates to Equal Experts demot hotel booking form w
 Examples:
 			|FirstName	 |LastName      |Price|DepositPaid|CheckIn   |CheckOut  |
 			|Nagendra    |Tanguturi     |100  |true       |2019-02-15|2019-02-25|
+			|Rishiv      |Tanguturi     |100  |true       |2019-03-15|2019-03-25|
 					
